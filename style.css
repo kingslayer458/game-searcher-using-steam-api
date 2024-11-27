@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b2838;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.game {
+    background-color: #2a475e;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.game img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2a475e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #3c6e91;
+}
+
+/* Game Details Section */
+#game-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2a475e;
+    border-radius: 5px;
+    display: none;
+}
+
+#game-details.visible {
+    display: block;
+}
+
+#back-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #1b2838;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-button:hover {
+    background-color: #3c6e91;
+}
+
+.hidden {
+    display: none;
+}
