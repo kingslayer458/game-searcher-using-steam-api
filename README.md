@@ -14,3 +14,10 @@ npm install express axios dotenv
 cd backend
 
 node server.js
+
+
+
+
+![image alt ]()
+![image alt ]()
+![image alt ]()
